@@ -11,8 +11,8 @@
     <meta property="og:title" content="RedKiwi, YouTube-based English Trainer" />
     <meta property="og:description" content="How could you speak English if you cannot understand it? It's time to improve your English listening skills! Try RedKiwi right now :)" />
     <meta property="og:image" content="./content/image/방민재.jpg" />
-    <link rel="stylesheet" href="css.css">
-    <script type="text/javascript" src="javascript.js"></script>
+    <link rel="stylesheet" href="./css/css.css">
+    <!-- <script type="text/javascript" src="script/script.js"></script> -->
 
     
     
@@ -20,36 +20,49 @@
 <body>
     <div class="headerSection">
         <nav class="nav">
-            <h1 class="home_logo">min's portfolio</h1>
-            <ul class="nav_style">
-                <li>HOME</li>
-                <li>ABOUT ME</li>
-                <li></li>
-                <li></li>
-            </ul>
+            <h1 class="nav_logo">MIN's Portfolio</h1>
+            <div class="nav_style">
+                <div class="nav_button"><a href="#section1">HOME</a></div>
+                <div class="nav_button"><a href="#section2">ABOUT ME</a></div>
+                <div class="nav_button"><a href="">SKILLS</a></div>
+                <div class="nav_button"><a href="">PROJECT</a></div>
+            </div>
         </nav>
     </div>
     <main>
-        <div class="section section1"></div>
-        <div class="section section2"></div>
-        <div class="section section3"></div>
-        <div class="section section4"></div>
+        <div class="section_wrap">
+            <div class="section_common main_background" id="section1">
+                <div class="main_page">
+                    <div class="">
+                        <h1 class="main_introduce_h1">백엔드 개발자 방민재입니다.</h1>
+                    </div>
+                    <div class="fade"><a href="#section2">더 알아보기</a></div>
+                </div>
+            </div>
+            <div class="section_common" id="section2">
+                <div class="section_body">
+                    <div>
+                        <img src="./images/my_photo.jpg" class="introduce_img">
+                    </div>
+
+                    <div class="introduce_div">
+                        sssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer class="footer">
-        <div class="footer_wrap">
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+    <footer class="footer_background">
+        <div class="footer_main">
+            <ul class="footer_link_wrap">
+                <li class="link_object"><a href="https://discord.gg/qADd5kzr" target="_blank"><img src="./images/link_image/discord.png" class="link_a"></a></li>
+                <li class="link_object"><a href=""><img src="./images/link_image/instagram.png" class="link_type_b"></a></li>
+                <li class="link_object"><img src="./images/link_image/kakaotalk.png" class="link_type_b"></li>
+                <li class="link_object"><a href="https://github.com/extermins"><img src="./images/link_image/github.png" class="link_type_b"></a></li>
             </ul>
-            <span class="linkgit">
-                <a href="https://github.com/extermins">
-                    <img src="./content/icon/github.png" width="60px" height="60px">
-                </a>
-            </span>
-            <span>Copyright ⓒ 2023. BangMinJae All rights reserved.</span>
+            <div class="link_object"> © 2024. Bang Min Jae. All rights reserved.</div>
         </div>
     </footer>
+    <script type="text/javascript" src="script/script.js"></script>
 </body>
 </html>
