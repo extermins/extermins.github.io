@@ -1,15 +1,40 @@
-/* basic css */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
 
-html,body,ul,li,nav,h1,h2,h3,h4,h5,h6{margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif; scroll-behavior: smooth;
-    overflow-x: hidden;
-    -webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
-li{list-style: none;}
-a{text-decoration: none; color: #000;}
+/* 전체 css 기본 속성 */
+html,body,p{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+ul, li {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
 
-/* header, nav */
-.headerSection{
+.font{
+    font-family: "Nanum Pen Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    color: #fff;
+}
+.head_font{
+    font-family: "Nanum Pen Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    color: #fff;
+}
+
+
+/* header css*/
+.header{
     position: absolute; position: fixed;
     width: 100%; height: 100px; 
     overflow: hidden;  border-bottom:1px solid #858585; z-index: 100;
@@ -18,14 +43,15 @@ a{text-decoration: none; color: #000;}
     visibility: hidden; opacity: 0;
 }
 
-.nav{
+.header_wrap{
     position:relative;
     width: 1000px; height: 100%;
     margin: 0 auto;
-    display: flex; justify-content: space-between; 
+    display: flex;
+    justify-content: space-between; 
 }
 
-.nav_logo{
+.logo{
     position:absolute;
     top:50%;
     transform:translate(0,-50%);
@@ -33,41 +59,51 @@ a{text-decoration: none; color: #000;}
     z-index: 1000;
 }
 
-.nav_style{
+.nav{
     display: flex;
     position:absolute;
     top:50%;
     right: 0%;
     transform:translate(0,-50%);
 }
-.nav_button{
-    /* width: 20%; */
-    margin: 0 10px;
-
+.nav_ul{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 600px;
+}
+.nav_li{
+    width: ;
+    list-style: none;
+    margin: 0 20px;
 }
 
+/* 메인페이지 home css 속성 */
 
-
-/* main */
-.section_wrap{
+.first_page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    width: 100%;
-    height: 100%;
-}
-.section_common{
-    width: 100vw;
     height: 100vh;
+    margin: 0;
+    background-color: #404040;
+    flex-direction: column;
 }
-.main_background{
-    background-color: #cfcfcf;
-    opacity: 0.3;
-}
-.main_page{
-    width: 1000px;
-    height: 300px;
-    margin: auto;
-    text-align: center;
 
+.first_page_typing{
+    
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid white;
+    animation: blink 0.5s infinite , typing 3s steps(23) forwards;
+}
+.first_page_link{
+    margin-top: 30px;
+    opacity: 0;
+    animation: fadeInOut 4s infinite;
+    animation-delay: 4s;
 }
 
 @keyframes fadeInOut {
@@ -82,95 +118,71 @@ a{text-decoration: none; color: #000;}
     }
   }
 
-  /* 애니메이션을 적용할 요소 스타일 */
-  .fade {
-    animation: fadeInOut 4s infinite;
-    color: #000;
-    font-size: 30px; /* 3초 동안 애니메이션 반복 */
-    font-family: Noto Sans KR;
-    font-weight: 700;
-  }
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+}
+
+@keyframes typing{
+    from {
+        width: 0;
+    }to{
+        width: 395px;
+    }
+}
 
 
 
-.section_body{
-    width: 1000px;
+  
+
+
+
+.second_page{
+    width: 100%;
     height: 100vh;
-    background-color: rgb(194, 194, 194);
-    margin: 0 auto;
+    background-color: #ff7f7f;
+    color: #404040;
     display: flex;
-    justify-content: space-around;
-    border-radius: 20px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-.introduce_img{
-    width: 300px;
-    height: 400px;
-    margin-top: 150px;
+
+.second_page_main{
+    margin-top: 100px;
+    width: 850px;
 }
 
-.introduce_div{
-    margin-top: 150px;
-    width: 400px;
-    height: 400px;
+.second_page_sss{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
 }
+.sss{
+    width: 33%;
+}
+
+
 
 
 /* footer */
-.footer_background{
-    width: 100%;
-    height: 170px;
-    background-color: #4a4a4a;
-    opacity: 0.7;
-}
-.footer_main{
-    margin: 0 auto;
-    width: 1000px;
-    height: 100%;
-    text-align: center;
-    display: flex; /* Flexbox container */
-    align-items: center; /* Vertical centering */
-    justify-content: center; /* Optional: Horizontal centering of child elements */
-    flex-direction: column;
-}
-.footer_link_wrap{
+
+.footer{
+    height: 200px;
     display: flex;
-    margin: 0 auto;
-    width: 300px;
-    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
-.link_object{
-    color: #fff;
-    margin: 10px auto;
+.footer_ul{
+    display: flex;
+    width: 400px;
 }
-.link_a{
-    width: 45px;
-    height: 39px;
+.footer_li{
+    width: 23%;
 }
-.link_type_b{
-    width: 45px;
-    height: 45px;
+.copyright{
+    margin-top: 20px;
 }
-
-@media screen and (max-width:767px){ 
-	/* Mobile */
-    .nav_style{
-        visibility: hidden;
-    }
-}
-
-@media screen and (min-width:768px) and (max-width: 1023px) {
-	/* Tablet */
-    .nav{
-        width: 700px; height: 100%;
-    }
-}
-
-@media screen and (min-width:1024px) {
-	/* Desktop */
-    .nav{
-        width: 1000px; height: 100%;
-    }
-}
-
-

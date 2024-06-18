@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const nav = document.querySelector('.headerSection');
-  let height_line = window.innerHeight - 1; // 특정 높이값
+  const nav = document.querySelector('.header');
+  let height_line = window.innerHeight - 100;
 
   const checkScroll = () => {
       if (window.scrollY >= height_line) {
