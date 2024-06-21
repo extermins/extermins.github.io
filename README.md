@@ -1,2 +1,2 @@
 # extermins.github.io
-방민재의 웹개발 공부 블로그
+방민재 포트폴리오
