@@ -73,7 +73,7 @@ ul, li {
     width: 600px;
 }
 .nav_li{
-    width: ;
+    
     list-style: none;
     margin: 0 20px;
 }
@@ -133,11 +133,6 @@ ul, li {
 }
 
 
-
-  
-
-
-
 .second_page{
     width: 100%;
     height: 100vh;
@@ -152,16 +147,42 @@ ul, li {
 
 .second_page_main{
     margin-top: 100px;
-    width: 850px;
+    width: 1000px;
 }
 
 .second_page_sss{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
 }
-.sss{
+.introduce_wrap{
+    margin-top: 30px;
     width: 33%;
+    font-size: 2rem;
+    font-family: "Nanum Pen Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: space-between;
+}
+.introduce{
+    display: flex;
+}
+.introduce_icon{
+    width: 64px;
+    height: 64px;
+}
+.introduce_detail{
+    margin-left: 30px;
+}
+.introduce_details_header{
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+}
+.introduce_details_content{
+    color: white;
 }
 
 

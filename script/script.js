@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
           nav.style.visibility = 'visible';
           nav.style.opacity = '1';
           nav.style.transform = 'translateY(0)';
+          console.log("스크롤 :" +window.scrollY);
       } else {
           nav.style.visibility = 'hidden';
           nav.style.opacity = '0';
