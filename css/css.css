@@ -5,7 +5,19 @@ html,body,p{
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    ::-webkit-scrollbar {
+        display: none;
+      }
 }
+body{
+    -ms-overflow-style: none;
+    }
+    
+   ::-webkit-scrollbar {
+     display: none;
+   }
+
 a{
     text-decoration: none;
     color: #fff;
@@ -73,9 +85,9 @@ ul, li {
     width: 600px;
 }
 .nav_li{
-    
     list-style: none;
     margin: 0 20px;
+    font-size: 25px;
 }
 
 /* 메인페이지 home css 속성 */
@@ -132,6 +144,7 @@ ul, li {
     }
 }
 
+/* second_page */
 
 .second_page{
     width: 100%;
@@ -146,7 +159,7 @@ ul, li {
 
 
 .second_page_main{
-    margin-top: 100px;
+    /* margin-top: ; */
     width: 1000px;
 }
 
@@ -186,16 +199,147 @@ ul, li {
 }
 
 
+/* third_page */
 
-
-/* footer */
-
-.footer{
-    height: 200px;
+.third_page{
+    width: 100%;
+    height: 100vh;
+    background-color: #0ee;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+
+.third_page_main{
+    width: 1200px;
+    height: 600px;
+    border: 1px solid black;
+    background-color: #fff;
+    margin-top: 50px;
+    border-radius: 30px;
+}
+
+
+
+/* 슬라이드 */
+
+
+.slider_wrap{
+    width: 1000px;
+    height: 450px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+    border-radius: 20px;
+}
+.slider {
+    position: relative;
+    max-width: 30%;
+    /* margin: auto; */
+    overflow: hidden;
+    border-radius: 25px;
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slide {
+    min-width: 100%;
+    transition: 0.5s;
+}
+.slide img {
+    width: 100%;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* 슬라이드 이미지 */
+.project_slide_img{
+    width: 200px;
+}
+
+.project_detail{
+    width: 40%;
+}
+
+.project_detail_wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.details_head{
+    font-family: "Nanum Pen Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.details{
+    font-family: "Nanum Pen Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+
+/* forth_page */
+
+.forth_page{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(18, 29, 29);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* fifth_page */
+.fifth_page{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(238, 0, 0);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* footer */
+
+.footer{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #a0a0a0;
 }
 .footer_ul{
     display: flex;
@@ -203,7 +347,66 @@ ul, li {
 }
 .footer_li{
     width: 23%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer_link_img{
+    width: 40px;
+    height: 40px;
+}
+.footer_link_img_type_a{
+    width: 45px;
+    height: 40px;
 }
 .copyright{
     margin-top: 20px;
 }
+
+
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/ 
+@media all and (max-width:767px) {
+    .second_page_main{
+        width: 400px;
+    }
+    .second_page_sss{
+        
+    }
+
+    /* introduce */
+    .introduce_wrap{
+        width: 100%;
+    }
+    .introduce_icon{
+        width: 44px;
+        height: 44px;
+    }
+    .introduce_details_header{
+        font-size: 25px;
+    }
+    .introduce_details_content{
+        font-size: 20px;
+    }
+}
+
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
+@media all and (min-width:768px) and (max-width:1023px) {
+    .second_page_main{
+        width: 800px;
+    }
+    .second_page_sss{
+        justify-content: space-around;
+    }
+    .introduce_wrap{
+        width: 42%;
+    }
+} 
+
+/* media query */
+/* PC (해상도 1024px)*/ 
+@media all and (min-width:1024px) {
+    
+} 
+  
+
+  

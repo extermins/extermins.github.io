@@ -21,8 +21,8 @@
                 <ul class="nav_ul font">
                     <li class="nav_li"><a href="#first_page">HOME</a></li>
                     <li class="nav_li"><a href="#second_page">ABOUT ME</a></li>
-                    <li class="nav_li"><a href="#">SKIILS</a></li>
-                    <li class="nav_li"><a href="#">CAREER</a></li>
+                    <li class="nav_li"><a href="#third_page">PROJECT</a></li>
+                    <li class="nav_li"><a href="#forth_page">CAREER</a></li>
                 </ul>
             </nav>
         </div>
@@ -33,6 +33,7 @@
             <p class="first_page_typing font">안녕하세요, 백엔드 개발자 방민재입니다.</p>
             <p class="first_page_link font" ><a href="#second_page">더 알아보기</a></p>
         </div>
+
         <div class="second_page" id="second_page">
             <h2 class="head_font">ABOUT ME</h2>
             <div class="second_page_main">
@@ -100,21 +101,66 @@
             </div>
             
         </div>
-        <div class="third_page"></div>
-        <div class="forth_page"></div>    
+
+        <div class="third_page" id="third_page">
+            <h2 class="head_font">PROJECT</h2>
+            <div class="slider_wrap">
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide"><img src="./images/project/project_camping_main.png" class="project_slide_img"></div>
+                        <div class="slide"><img src="./images/project/project_camping_product.png" class="project_slide_img"></div>
+                        <div class="slide"><img src="./images/project/project_camping_cart.png" class="project_slide_img"></div>
+                        <div class="slide"><img src="./images/project/project_camping_payment.png" class="project_slide_img"></div>
+                    </div>
+                    <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="moveSlide(1)">&#10095;</a>
+                </div>
+                <div class="project_detail">
+                    <div class="project_detail_wrap">
+                        <h3 class="details_head">부트캠핑</h3>
+                        <div>
+                            <p class="details">1인 프로젝트</p>
+                            <p class="details">부트캠프를 참여하여 개발한 캠핑용품사이트 입니다.</p>
+                            <p class="details">GIT URL<br> <span><a href="https://github.com/extermins/bootCamping">https://github.com/extermins/bootCamping</a></span></p>
+                            <p class="details">개발 스택<br> HTML,CSS,JAVASCRIPT<br>mysql<br>git</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="forth_page" id="forth_page">
+            <h2 class="head_font">CAREER</h2>
+            <div>
+
+            </div>
+        </div>
+
     </main>
 
 
     <footer class="footer">
         <ul class="footer_ul">
-            <!-- <li class="link_object"><a href="https://discord.gg/qADd5kzr" target="_blank"><img src="./images/link_image/discord.png" class="link_a"></a></li>
-                <li class="link_object"><a href=""><img src="./images/link_image/instagram.png" class="link_type_b"></a></li>
-                <li class="link_object"><a href="http://pf.kakao.com/_txjNxkG/chat"><img src="./images/link_image/kakaotalk.png" class="link_type_b"></a></li>
-                <li class="link_object"><a href="https://github.com/extermins"><img src="./images/link_image/github.png" class="link_type_b"></a></li> -->
-            <li class="footer_li">ss</li>
-            <li class="footer_li">ss</li>
-            <li class="footer_li">aa</li>
-            <li class="footer_li">ss</li>
+            <li class="footer_li">
+                <a href="https://discord.gg/qADd5kzr" target="_blank">
+                    <img src="./images/link_image/discord.png" class="footer_link_img_type_a">
+                </a>
+            </li>
+            <li class="footer_li">
+                <a href="https://github.com/extermins" target="_blank">
+                    <img src="./images/link_image/github.png" class="footer_link_img">
+                </a>
+            </li>
+            <li class="footer_li">
+                <a href="http://pf.kakao.com/_txjNxkG/chat" target="_blank">
+                    <img src="./images/link_image/kakaotalk.png" class="footer_link_img">
+                </a>
+            </li>
+            <li class="footer_li">
+                <a href="https://www.instagram.com/min_0107" target="_blank">
+                    <img src="./images/link_image/instagram.png" class="footer_link_img">
+                </a>
+            </li>
         </ul>
         <p class="copyright">© 2024. Bang Min Jae. All rights reserved.</p>
     </footer>
