@@ -312,23 +312,42 @@ ul, li {
 .forth_page{
     width: 100%;
     height: 100vh;
-    background-color: rgb(18, 29, 29);
+    background-color: rgb(115, 115, 115);
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
-
-/* fifth_page */
-.fifth_page{
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(238, 0, 0);
+.forth_page_main{
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 1000px;
+}
+.career_detail{
+    padding-left: 40px;
+    width: 500px;
+    border-left: 2px solid #adadad94;
+}
+
+.career_logo{
+    width: 300px;
+}
+.career_detail_head{
+    font-family: "Nanum Pen Script", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 35px;
+    color: white;
+}
+
+.career_detail_content{
+    font-family: "Nanum Pen Script", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 28px;
+    color: white;
 }
 
 /* footer */
@@ -374,9 +393,6 @@ ul, li {
     .second_page_main{
         width: 400px;
     }
-    .second_page_sss{
-        
-    }
 
     /* introduce */
     .introduce_wrap{
@@ -409,6 +425,17 @@ ul, li {
         max-width: 100%;
         height: 450px;
     }
+
+
+    .forth_page_main{
+        flex-direction: column;
+        width: 500px;
+    }
+    .career_detail{
+        border-top: #adadad94 2px solid;
+        border-left: none;
+        margin-top: 30px;
+    }
 }
 
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
@@ -434,6 +461,22 @@ ul, li {
 
     .slider_wrap{
         width: 700px;
+    }
+
+
+
+    .forth_page_main{
+        width: 730px;
+    }
+
+    .career_logo{
+        width: 200px;
+        margin-right: 20px;
+    }
+
+    .career_detail_head{
+        padding: 0;
+        margin: 0 0 20px 0;
     }
 } 
 
